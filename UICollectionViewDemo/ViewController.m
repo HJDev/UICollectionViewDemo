@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HJCollectionViewFlowLayout.h"
+#import "HJCollectionCycleLayout.h"
 #import "HJCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
@@ -23,13 +24,15 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	HJCollectionViewFlowLayout *layout = [[HJCollectionViewFlowLayout alloc] init];
-	layout.itemSize = CGSizeMake(150, 130);
-	layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+//	HJCollectionViewFlowLayout *layout = [[HJCollectionViewFlowLayout alloc] init];
+//	layout.itemSize = CGSizeMake(150, 130);
+//	layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+	
+	HJCollectionCycleLayout *cycleLayout = [[HJCollectionCycleLayout alloc] init];
 	self.collectionView.dataSource = self;
 	self.collectionView.showsVerticalScrollIndicator = NO;
 	self.collectionView.showsHorizontalScrollIndicator = NO;
-	self.collectionView.collectionViewLayout = layout;
+	self.collectionView.collectionViewLayout = cycleLayout;
 	[self.collectionView registerNib:[UINib nibWithNibName:@"HJCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:NSStringFromClass([HJCollectionViewCell class])];
 }
 

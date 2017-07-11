@@ -18,6 +18,7 @@
 		7989B57E1F1367D000658D29 /* HJCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989B57D1F1367D000658D29 /* HJCollectionViewFlowLayout.m */; };
 		7989B5811F13699400658D29 /* HJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989B5801F13699400658D29 /* HJCollectionViewCell.m */; };
 		7989B5831F136F4A00658D29 /* HJCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7989B5821F136F4A00658D29 /* HJCollectionViewCell.xib */; };
+		7989B5861F14B94D00658D29 /* HJCollectionCycleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7989B5851F14B94D00658D29 /* HJCollectionCycleLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		7989B57F1F13699400658D29 /* HJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCollectionViewCell.h; sourceTree = "<group>"; };
 		7989B5801F13699400658D29 /* HJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCollectionViewCell.m; sourceTree = "<group>"; };
 		7989B5821F136F4A00658D29 /* HJCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HJCollectionViewCell.xib; sourceTree = "<group>"; };
+		7989B5841F14B94D00658D29 /* HJCollectionCycleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCollectionCycleLayout.h; sourceTree = "<group>"; };
+		7989B5851F14B94D00658D29 /* HJCollectionCycleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCollectionCycleLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				7989B5821F136F4A00658D29 /* HJCollectionViewCell.xib */,
 				7989B57C1F1367D000658D29 /* HJCollectionViewFlowLayout.h */,
 				7989B57D1F1367D000658D29 /* HJCollectionViewFlowLayout.m */,
+				7989B5841F14B94D00658D29 /* HJCollectionCycleLayout.h */,
+				7989B5851F14B94D00658D29 /* HJCollectionCycleLayout.m */,
 				7989B5521F1364D900658D29 /* Main.storyboard */,
 				7989B5551F1364D900658D29 /* Assets.xcassets */,
 				7989B5571F1364D900658D29 /* LaunchScreen.storyboard */,
@@ -295,6 +300,7 @@
 				7989B54E1F1364D900658D29 /* AppDelegate.m in Sources */,
 				7989B5811F13699400658D29 /* HJCollectionViewCell.m in Sources */,
 				7989B57E1F1367D000658D29 /* HJCollectionViewFlowLayout.m in Sources */,
+				7989B5861F14B94D00658D29 /* HJCollectionCycleLayout.m in Sources */,
 				7989B54B1F1364D900658D29 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +539,7 @@
 				7989B5751F1364D900658D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7989B5761F1364D900658D29 /* Build configuration list for PBXNativeTarget "UICollectionViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +548,7 @@
 				7989B5781F1364D900658D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7989B5791F1364D900658D29 /* Build configuration list for PBXNativeTarget "UICollectionViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +557,7 @@
 				7989B57B1F1364D900658D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

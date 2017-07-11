@@ -20,6 +20,8 @@
 	_imageName = [imageName copy];
 	
 	self.iconView.image = [UIImage imageNamed:imageName];
+	self.iconView.contentMode = UIViewContentModeScaleAspectFill;
+	self.iconView.clipsToBounds = YES;
 }
 
 
