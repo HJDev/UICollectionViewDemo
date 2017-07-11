@@ -30,6 +30,7 @@
 	
 	HJCollectionCycleLayout *cycleLayout = [[HJCollectionCycleLayout alloc] init];
 	self.collectionView.dataSource = self;
+	self.collectionView.delegate = self;
 	self.collectionView.showsVerticalScrollIndicator = NO;
 	self.collectionView.showsHorizontalScrollIndicator = NO;
 	self.collectionView.collectionViewLayout = cycleLayout;
@@ -56,6 +57,20 @@
 	NSString *imageName = [self.dataList objectAtIndex:indexPath.item];
 	cell.imageName = imageName;
 	return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+	NSLog(@"%@", indexPath);
+	if ([self.collectionView.collectionViewLayout isKindOfClass:[HJCollectionCycleLayout class]]) {
+		HJCollectionViewFlowLayout *layout = [[HJCollectionViewFlowLayout alloc] init];
+		layout.itemSize = CGSizeMake(150, 130);
+		layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+		self.collectionView.collectionViewLayout = layout;
+	} else {
+		HJCollectionCycleLayout *layout = [[HJCollectionCycleLayout alloc] init];
+		self.collectionView.collectionViewLayout = layout;
+	}
 }
 
 #pragma mark - lazyload
