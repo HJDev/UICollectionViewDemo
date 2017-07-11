@@ -7,4 +7,6 @@ UICollectionView Demo
 
 * 自定义圆形布局，继承自UICollectionViewLayout
 
+* 点击item可以切换两种布局
+
 整个demo核心部分代码注释详尽，以备后来查看
